@@ -1,3 +1,5 @@
+{% assign size = include.lb_path | size %}
+{% assign short_page = page.url | slice: 0,size %}
 {% if children == true %}
 <li class="children">
 {% else %}
@@ -8,7 +10,7 @@
 {% else %}
 <a href="{{ include.lb_path }}">
 {% endif %}
-{% if include.lb_path == page.url %}
+{% if include.lb_path == short_page %}
 <span class="current">
 {% else %}
 <span>

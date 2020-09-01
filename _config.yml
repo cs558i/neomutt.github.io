@@ -49,6 +49,8 @@ collections:
     output: true
   distro:
     output: true
+  dyk:
+    output: true
   feature:
     output: true
   howto:
