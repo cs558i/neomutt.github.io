@@ -14,7 +14,9 @@
       {% include list-bold.html lb_path='/about'     lb_title='About'         %}
       {% include list-bold.html lb_path='/credits'   lb_title='Credits'       %}
       {% include list-bold.html lb_path='/conduct'   lb_title='Conduct'       %}
-      {% include list-bold.html lb_path='/dyk'       lb_title='Did You Know?' %}
+      {% if u2 == '/dyk' or u2 == '/dyk/' %}
+        {% include list-bold.html lb_path='/dyk'       lb_title='Did You Know?' %}
+      {% endif %}
     </ul>
     {% break %}
   {% endif %}
